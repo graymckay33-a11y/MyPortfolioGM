@@ -1,0 +1,473 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2e9da;
+    margin: 0;
+    color: #35332e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+/* page intro */
+body > h2, main > h2{
+    font-size: 34px;
+    margin: 45px 0 12px;
+    letter-spacing: 1px;
+}
+body > p, main > p {
+    margin: 8px auto;
+    line-height: 1.7;
+}
+
+/* HEADERS */
+header{
+    background-color: #c7b9a3;
+    padding: 20px clamp(20px, 5vw, 80px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 7px;
+}
+header h1{
+    color: #35332e;
+    font-size: clamp(24px, 2vw, 34px);
+}
+header h1 a{
+    color: #35332e;
+    text-decoration: none;
+}
+header h1 a:hover{
+    color:#c98268;
+}
+/* NAVIGATION */
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(12px, 1.5vw, 25px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav a{
+    color: #35332e;
+    text-decoration: none;
+    font-size: 28px;
+}
+nav a:hover{
+    color: #c98268;
+    }
+nav a.active{
+    color:#f2e9da;
+    background-color:#35332e;
+    border-radius: 5px;
+}
+/* MAIN */
+main{
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 30px;
+}
+
+/* HEADINGS */
+h2{
+    color:#35332e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h3{
+    color:#35332e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h4{
+    color: #35332e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+p{
+    color: #35332e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+/*Me ABOUT*/
+.me-about{
+    text-align: center;
+    background-color:#d9cbb6;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px 35px;
+    border-radius: 7px;
+}
+.me-about a{
+    color:#35332e;
+    text-decoration: none;
+}
+.me-about a:hover{
+    color:#c98268;
+}
+/*GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    max-width: 1250px;
+    gap: 45px;
+    padding: 10px 0;
+    margin: 0 auto;
+    
+}
+.gallery img{
+    width: 450px;
+    height: 400px;
+}
+.gallery-item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    object-fit:cover;
+    background-color: #f2e9da;
+    padding: 8px;
+}
+.gallery-item h2 {
+    margin: 5px 0 10px;
+}
+.gallery a{
+    display: block;
+}
+.gallery-item{
+    min-width: 0;
+    text-align: center;
+    padding:10px;
+    border-radius:5px;
+    background-color: #a4aa91;
+    transition: background-color 0.3s ease;
+}
+.gallery-item a{
+    display: block;
+}
+.gallery-item:hover{
+    background-color: #c98268;
+}
+/* FAVORITES */
+.favorite{
+    background-color:#a4aa91;
+    border-radius: 7px;
+    max-width: 1500px;
+    margin: 35px auto;
+    padding: 30px 5%;
+    text-align: center;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Artwork */
+.favorite img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+    padding: 10px;
+    background-color:#f2e9da;
+    box-shadow: 0 4px 12px #35332e18;
+    border: 1px solid #d9cbb6;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+/*OTHER*/
+.other-gallery{
+    background-color:#d9cbb6;
+    border-radius: 7px;
+    max-width: 1500px;
+    margin: 35px auto;
+    padding: 30px 5%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Artwork */
+.other-gallery img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+    padding: 10px;
+    background-color:#f2e9da;
+    box-shadow: 0 4px 12px #35332e18;
+    border: 1px solid #d9cbb6;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+/* ABOUT ME PAGE */
+
+.about-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px 35px;
+}
+
+.about-page > h2 {
+    font-size: 34px;
+    margin: 20px 0 35px;
+}
+
+/* Photos and intro text in one row */
+.about-page .about-intro {
+    display: grid;
+    grid-template-columns: 400px minmax(0, 1fr);
+    align-items: stretch;
+    gap: clamp(20px, 4vw, 50px);
+    width: 100%;
+    margin: 20px auto 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* Photo left */
+.about-page .about-photos {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+}
+
+.about-page .about-photos img {
+    display: block;
+    width: calc(50% - 8px);
+    height: 280px;
+    object-fit: cover;
+    padding: 8px;
+    background-color: #d9cbb6;
+    border: 1px solid #d9cbb6;
+    box-shadow: 0 5px 15px #45332e20;
+}
+
+/* Text on the right */
+.about-page .about-text {
+    background-color: #d9cbb6;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+    align-self: stretch;
+    border-radius: 7px;
+}
+
+.about-page .about-text h3 {
+    text-align: left;
+    font-size: 25px;
+    margin: 0 0 15px;
+}
+
+.about-page .about-text p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+/* Other About Me sections */
+.about-page .about-section {
+    display: block;
+    background-color: #a4aa91;
+    padding: 25px 35px;
+    margin: 25px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.about-page .about-section h3 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.about-page .about-section p {
+    max-width: 850px;
+    margin: 0;
+    text-align: left;
+    line-height: 1.9;
+}
+/*TOP TEXT*/
+.about-text{
+    background-color: #d9cbb6;
+    display: block;
+    padding: 5px 5px;
+    margin: 0;
+    
+}
+
+/* Footer */
+footer {
+    background-color: #c98268;
+    color: #35332e;
+    padding: 25px 15px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+/* TABLETS AND SMALL LAPTOPS */
+@media (max-width: 1000px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .about-page .about-intro {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .about-page .about-photos {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-page .about-text {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+/* PHONES */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        gap: 12px 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    body > h2,
+    main > h2,
+    .about-page > h2 {
+        font-size: 27px;
+        margin: 25px 0 12px;
+    }
+
+    .gallery {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+        max-width: 400px;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+    }
+
+    .favorite,
+    .other-gallery {
+        margin: 20px auto;
+        padding: 20px 12px;
+        gap: 18px;
+    }
+
+    .favorite img,
+    .other-gallery img {
+        max-width: 100%;
+        max-height: 400px;
+        height: auto;
+    }
+
+    .about-page {
+        padding: 20px 15px;
+    }
+
+    .about-page .about-intro {
+        padding: 5px 0;
+        margin: 15px auto 30px;
+    }
+
+    .about-page .about-photos {
+        gap: 10px;
+    }
+
+    .about-page .about-photos img {
+        width: calc(50% - 5px);
+        height: 200px;
+        padding: 5px;
+    }
+
+    .about-page .about-text h3 {
+        font-size: 23px;
+    }
+
+    .about-page .about-text p,
+    .about-page .about-section p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .about-page .about-section {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 20px 12px;
+    }
+}
+
+/* VERY SMALL PHONES */
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav ul {
+        gap: 10px 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .about-page .about-photos img {
+        height: 160px;
+    }
+}
